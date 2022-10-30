@@ -3,9 +3,41 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
-.nopadding {
-  padding: 0 !important;
-  margin: 0 !important;
+p {
+  font-size: 18px;
+}
+
+h2 {
+  color: beige;
+}
+
+button {
+  background-color: beige;
+  color: black;
+  border: 1px solid black;
+  padding: 15px 25px;
+}
+
+button:hover {
+  background-color: black;
+  color: beige;
+  border: 1px solid black;
+  padding: 15px 25px;
+}
+
+/* Menu */
+.menu {
+  background-color: beige;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.menu-image {
+  border-radius: 10px;
+}
+
+.menu-product {
+  font-size: 25px;
 }
 
 /* NavBar */
@@ -13,7 +45,6 @@
 .main-sidebar {
   padding: 20px !important;
   background-color: beige;
-  height: 100vh;
   border-right: 2px solid black;
 }
 
@@ -49,7 +80,7 @@
 }
 
 
-/* NavBar */
+/* Contenido General */
 .main-content {
   background-color: rgba(69, 130, 56, 0.7);
 }

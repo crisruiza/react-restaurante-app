@@ -6,7 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
-      <div className="main row ">
+      <div className="main row gx-0">
         <div className="main-sidebar col-md-4 col-sm-12">
           <div className="main-sidebar-brand m-3">
             <h1>Distrito Wok 🥡</h1>

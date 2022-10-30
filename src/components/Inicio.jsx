@@ -1,13 +1,18 @@
+import HeroBanner from "../images/hero-banner.jpeg";
 function Inicio() {
   return (
     <>
-      <div className="container-fluid mt-5">
-        <h2>La auténtica cocina oriental llegó a Guadalajara</h2>
+      <img src={HeroBanner} alt="Banner comida asiática" width="100%" />
+      <div className="m-3">
+        <h2>
+          Tenemos lo mejor en Woks 🥡, Pokes 🥙 y demás platillos de Asia Food.
+          🥢{" "}
+        </h2>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad non,
-          reprehenderit fugit quibusdam tenetur in optio ea, itaque cumque nisi
-          praesentium assumenda doloribus nobis sequi doloremque aspernatur sit!
-          Distinctio, aut.
+          En DISTRITO WOK preparamos lo mejor de los woks y la comida asiática,
+          puedes personalizar tus platillos y vivir una experiencia diferente
+          cada que nos visites, ¡ya sea en sucursal o nos pidas a través de tu
+          plataforma favorita!
         </p>
       </div>
     </>

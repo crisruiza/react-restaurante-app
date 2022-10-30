@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { db } from "../firebase";
 import { collection, addDoc, onSnapshot } from "firebase/firestore";
+import Gracias from "../components/Gracias";
+import Swal from "sweetalert2";
 
 function Reservar() {
   // Formulario
@@ -21,6 +23,11 @@ function Reservar() {
     event.preventDefault();
     console.log(formulario);
     await addDoc(collection(db, "Reservaciones"), formulario);
+    Swal.fire(
+      `Gracias por reservar con nosotros ${formulario.nombre}`,
+      "¡Te esperamos!",
+      "success"
+    );
   };
 
   // Tabla
@@ -110,6 +117,7 @@ function Reservar() {
           </tbody>
         </table>
       </div>
+      <Gracias nombre="Distrito Wok" />
     </>
   );
 }
